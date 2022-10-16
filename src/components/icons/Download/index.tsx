@@ -11,8 +11,8 @@ export const IconDownload = ({ size, color }: IconsProps) => (
       data-testid="icon-download"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M16.7071 21.7071L16 22.4142L15.2929 21.7071L7.29289 13.7071L8.70711 12.2929L15 18.5858V3H17V18.5858L23.2929 12.2929L24.7071 13.7071L16.7071 21.7071ZM3 21V27V28H4H28H29V27V21H27V26H5V21H3Z"
         fill={color ?? `white`}
       />

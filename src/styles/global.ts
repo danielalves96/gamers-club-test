@@ -1,17 +1,17 @@
 import { createGlobalStyle } from 'styled-components';
+import * as color from './colors';
 
 export default createGlobalStyle`
-
 html {
-  background-color: #161724
+  background-color: ${color.uiDark1}
 }
 
 body {
   padding: 0rem;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: #FFFFFF
+  font-family: 'Teko', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  color: ${color.white}
 }
 
 a {
