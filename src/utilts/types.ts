@@ -1,6 +1,7 @@
 export type IconsProps = {
   size: number;
   color?: string;
+  reverse?: boolean;
 };
 
 export type DefaultError = {
@@ -88,4 +89,22 @@ export type NextTournamentProps = {
   status: string;
   currentTeams: number;
   maxTeams: number;
+};
+
+export type FeaturedMedalComponentProps = {
+  ranked: RankedProps;
+  featuredMedal: FeaturedMedalProps;
+};
+
+export type ExpertiseProgressBarProps = {
+  ranked: RankedProps;
+  expertiseProgress: ExpertiseProgressProps[];
+  player: PlayerProps;
+};
+
+export type BannerHeaderProps = {
+  ranked: RankedProps;
+  expertiseProgress: ExpertiseProgressProps[];
+  player: PlayerProps;
+  featuredMedal: FeaturedMedalProps;
 };

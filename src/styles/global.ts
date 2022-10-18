@@ -8,10 +8,13 @@ html {
 
 body {
   padding: 0rem;
+  padding-top: 102px;
   margin: 0;
   font-family: 'Teko', sans-serif;
   /* font-family: 'Poppins', sans-serif; */
-  color: ${color.white}
+  color: ${color.white};
+  margin: auto;
+  width: 1200px;
 }
 
 a {

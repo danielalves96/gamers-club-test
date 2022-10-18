@@ -1,9 +1,15 @@
+import BannerHeader from '@/components/banner';
 import API from '@/services/api';
 import { PlayerDataProps } from '@/utilts/types';
 import { GetServerSideProps } from 'next';
 
 export default function Home({ playerData }: PlayerDataProps) {
-  return <>{playerData.player.nickname}</>;
+  console.log(playerData);
+  return (
+    <>
+      <BannerHeader {...playerData} />
+    </>
+  );
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
