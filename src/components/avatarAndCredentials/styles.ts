@@ -10,6 +10,7 @@ export const Avatar = styled.img`
 export const PlayerData = styled.div`
   gap: 16px;
   display: flex;
+  width: 4rem;
 `;
 
 export const PlayerCredentials = styled.div`

@@ -41,5 +41,5 @@ export const Banner = styled.div<{ type: string }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  outline: 2px solid ${opacityWhite2};
+  outline: 1px solid ${opacityWhite2};
 `;

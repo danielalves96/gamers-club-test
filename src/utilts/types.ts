@@ -108,3 +108,35 @@ export type BannerHeaderProps = {
   player: PlayerProps;
   featuredMedal: FeaturedMedalProps;
 };
+
+export type ButtonProps = {
+  color: string;
+  textColor: string;
+  icon?: JSX.Element;
+  width: number;
+  text?: string;
+  onClick?: () => void;
+};
+
+export type FooterProps = {
+  config: ConfigProps[];
+  anticheat: AntiCheatProps;
+  reports: ReportsProps[];
+};
+
+export type DropdownProps = {
+  open: boolean;
+  changeAvatarData: ConfigProps;
+  hideBannedData: ConfigProps;
+};
+
+export type ReportsDataProps = {
+  onlinePlayers: ReportsProps;
+  bannedPlayers: ReportsProps;
+};
+
+export type FooterButtonsProps = {
+  anticheat: AntiCheatProps;
+  changeAvatarData: ConfigProps;
+  hideBannedData: ConfigProps;
+};

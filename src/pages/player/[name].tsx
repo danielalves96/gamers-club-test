@@ -1,14 +1,19 @@
 import BannerHeader from '@/components/bannerHeader';
+import { DataTabs } from '@/components/dataTabs';
+import { Footer } from '@/components/footer';
 import API from '@/services/api';
 import { PlayerDataProps } from '@/utilts/types';
 import { GetServerSideProps } from 'next';
+import { MainBox } from './styles';
 
 export default function Home({ playerData }: PlayerDataProps) {
   console.log(playerData);
   return (
-    <>
+    <MainBox>
       <BannerHeader {...playerData} />
-    </>
+      <DataTabs />
+      <Footer {...playerData} />
+    </MainBox>
   );
 }
 
