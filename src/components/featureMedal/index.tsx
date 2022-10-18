@@ -12,7 +12,7 @@ export function FeatureMedal({
   featuredMedal,
 }: FeaturedMedalComponentProps) {
   return (
-    <FeatureMedalBox type={ranked.type}>
+    <FeatureMedalBox type={ranked.type} data-testid="feature-medal">
       <FeatureMedalTop type={ranked.type} />
       <FeatureMedalImage>
         <MedalImage src={featuredMedal.image} alt={featuredMedal.name} />

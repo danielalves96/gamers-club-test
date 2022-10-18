@@ -1,4 +1,4 @@
-import BannerHeader from '@/components/banner';
+import BannerHeader from '@/components/bannerHeader';
 import API from '@/services/api';
 import { PlayerDataProps } from '@/utilts/types';
 import { GetServerSideProps } from 'next';

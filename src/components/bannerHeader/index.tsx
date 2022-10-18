@@ -1,4 +1,4 @@
-import { PlayerDataResponse } from '@/utilts/types';
+import { BannerHeaderProps } from '@/utilts/types';
 import React from 'react';
 import { AvatarAndCredentials } from '../avatarAndCredentials';
 import { ExpertiseProgressBar } from '../expertiseProgressBar';
@@ -10,7 +10,7 @@ const BannerHeader = ({
   player,
   featuredMedal,
   expertiseProgress,
-}: PlayerDataResponse) => {
+}: BannerHeaderProps) => {
   return (
     <>
       <Banner type={ranked.type}>

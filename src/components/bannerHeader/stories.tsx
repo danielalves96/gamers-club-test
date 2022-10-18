@@ -1,7 +1,7 @@
 import { PlayerDataResponse } from '@/utilts/types';
 import { Meta, Story } from '@storybook/react';
 import BannerHeader from '.';
-import { mockBannerHeader } from './mock';
+import { mockBannerHeader, mockBannerHeaderPro } from './mock';
 
 export default {
   title: `Components/BannerHeader`,
@@ -25,6 +25,10 @@ const Template: Story<PlayerDataResponse> = (args) => (
   <BannerHeader {...args} />
 );
 
-export const Default = Template.bind({});
+export const Open = Template.bind({});
 
-Default.args = mockBannerHeader;
+Open.args = mockBannerHeader;
+
+export const Pro = Template.bind({});
+
+Pro.args = mockBannerHeaderPro;

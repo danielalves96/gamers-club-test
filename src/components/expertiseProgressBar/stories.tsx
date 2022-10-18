@@ -11,8 +11,9 @@ export default {
       <div
         style={{
           margin: `1rem`,
-          width: `372px`,
+          width: `500px`,
           padding: `1rem`,
+          background: `#303356`,
         }}
       >
         <Story />

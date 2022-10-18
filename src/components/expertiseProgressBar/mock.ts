@@ -13,9 +13,9 @@ export const mockExpertiseProgressBar: ExpertiseProgressBarProps = {
     },
   },
   expertiseProgress: [
-    { key: `casual`, limit: 25, label: `Casual` },
+    { key: `casual`, limit: 50, label: `Casual` },
     { key: `competitive`, limit: 50, label: `Competitivo` },
-    { key: `amateur`, limit: 75, label: `Amador` },
+    { key: `amateur`, limit: 90, label: `Amador` },
     { key: `pro`, limit: 100, label: `Pro` },
   ],
   player: {

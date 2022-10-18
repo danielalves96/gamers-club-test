@@ -8,6 +8,7 @@ import {
   ExpertiseBar,
   ExpertisePin,
   ExpertisePinSpacer,
+  MainExpertise,
   PinGrid,
   PinLabel,
   PinPosition,
@@ -47,7 +48,7 @@ export function ExpertiseProgressBar({
     },
   );
   return (
-    <div>
+    <MainExpertise data-testid="expertise-progress-bar">
       <ExpertisePinSpacer>
         {topBarData.map((item: ExpertiseProgressProps) => (
           <PinPosition
@@ -92,6 +93,6 @@ export function ExpertiseProgressBar({
           </PinPosition>
         ))}
       </ExpertisePinSpacer>
-    </div>
+    </MainExpertise>
   );
 }

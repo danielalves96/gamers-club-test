@@ -10,7 +10,7 @@ import {
 
 export function AvatarAndCredentials(player: PlayerProps) {
   return (
-    <PlayerData>
+    <PlayerData data-testid="avatar-and-credentials">
       <Avatar
         src={player.avatar}
         alt={player.nickname}

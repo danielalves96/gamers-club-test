@@ -1,3 +1,4 @@
+import { white } from '../../styles/colors';
 import styled from 'styled-components';
 
 export const ExpertiseBar = styled.div`
@@ -45,6 +46,7 @@ export const ExpertisePin = styled.div`
 
 export const PinPosition = styled.div`
   display: flex;
+  justify-content: center;
   padding-left: 3%;
   justify-content: flex-end;
   min-width: 50%;
@@ -58,10 +60,18 @@ export const PinLabel = styled.span`
   line-height: 20px;
   text-align: right;
   text-transform: uppercase;
+  color: ${white};
 `;
 
 export const ExpertisePinSpacer = styled.div`
   display: flex;
   margin-top: 5px;
   margin-bottom: 5px;
+  justify-content: center;
+`;
+
+export const MainExpertise = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
 `;
