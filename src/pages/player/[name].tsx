@@ -7,17 +7,23 @@ import { GetServerSideProps } from 'next';
 import { MainBox } from '../../styles/player';
 import { useRouter } from 'next/router';
 import { BadgePLayerSelector } from '@/components/badgePlayerSelector';
+import Head from 'next/head';
 
 export default function Home({ playerData }: PlayerDataProps) {
   const router = useRouter();
   const { name } = router.query;
   return (
-    <MainBox>
-      <BannerHeader {...playerData} />
-      <DataTabs {...playerData} />
-      <Footer {...playerData} />
-      <BadgePLayerSelector name={name}></BadgePLayerSelector>
-    </MainBox>
+    <>
+      <Head>
+        <title>GC Test | Daniel Alves</title>
+      </Head>
+      <MainBox>
+        <BannerHeader {...playerData} />
+        <DataTabs {...playerData} />
+        <Footer {...playerData} />
+        <BadgePLayerSelector name={name}></BadgePLayerSelector>
+      </MainBox>
+    </>
   );
 }
 
