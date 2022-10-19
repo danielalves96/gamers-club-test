@@ -28,7 +28,7 @@ export const DefaultText = styled.span`
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  color: #ffffff;
+  color: white;
 `;
 
 export const ColorText = styled.span<{ color: string }>`

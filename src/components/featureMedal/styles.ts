@@ -34,7 +34,7 @@ export const FeatureMedalBox = styled.div<{ type: string }>`
       rgba(89, 104, 248, 0) 50%,
       rgba(89, 104, 248, 0.16) 98.7%
     ),
-    #1c1d2c;`};
+    ${uiDark2};`};
   border: 1px solid
     ${(props) => (props.type === `pro` ? `${red5}` : `${blue4}`)};
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24);

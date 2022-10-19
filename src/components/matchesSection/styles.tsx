@@ -19,7 +19,7 @@ export const SectionHeaderTitle = styled.span`
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: white;
 `;
 
 export const SectionBody = styled.div`

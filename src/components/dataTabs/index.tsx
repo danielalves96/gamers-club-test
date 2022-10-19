@@ -1,4 +1,4 @@
-import { blue5, red5, yellow2 } from '@/styles/colors';
+import { black0, blue5, red5, yellow2 } from '@/styles/colors';
 import { DataTabsProps } from '@/utilts/types';
 import React from 'react';
 import { IconArrowRight, IconDoor, IconMissions, IconUsers } from '../icons';
@@ -15,8 +15,8 @@ export function DataTabs({ ranked, lobby, tournaments }: DataTabsProps) {
       <MatchesSection
         color={yellow2}
         matchData={lobby}
-        buttonTextColor="#000"
-        buttonIcon={<IconArrowRight size={24} color="#000" />}
+        buttonTextColor={black0}
+        buttonIcon={<IconArrowRight size={24} color={black0} />}
         icon={<IconDoor size={24} color={yellow2} />}
       />
       <MatchesSection

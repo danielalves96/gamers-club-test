@@ -1,10 +1,10 @@
-import { white } from '../../styles/colors';
+import { blue3, blue4, red3, red4, uiDark2, white } from '../../styles/colors';
 import styled from 'styled-components';
 
 export const ExpertiseBar = styled.div`
   width: 480px;
   height: 16px;
-  background: #1c1d2c;
+  background: ${uiDark2};
   box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.04),
     inset 0px 2px 4px rgba(0, 0, 0, 0.16);
   border-radius: 16px;
@@ -23,8 +23,8 @@ export const StatusBar = styled.div<{ expertise: number; type: string }>`
   top: 28px;
   background: ${(props) =>
     props.type === `pro`
-      ? `linear-gradient(90deg, #fb4b56 0%, #fc6973 100%);`
-      : `linear-gradient(90deg, #49A3FD 0%, #61B3FA 100%);`};
+      ? `linear-gradient(90deg, ${red4} 0%, ${red3} 100%);`
+      : `linear-gradient(90deg, ${blue4} 0%, ${blue3} 100%);`};
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0px 2px 4px rgb(0 0 0 / 16%),
     inset 0px 1px 0px rgb(255 255 255 / 24%);

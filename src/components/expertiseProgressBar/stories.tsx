@@ -1,3 +1,4 @@
+import { bgStories } from '../../styles/colors';
 import { ExpertiseProgressBarProps } from '@/utilts/types';
 import { Meta, Story } from '@storybook/react';
 import { ExpertiseProgressBar } from '.';
@@ -13,7 +14,7 @@ export default {
           margin: `1rem`,
           width: `500px`,
           padding: `1rem`,
-          background: `#303356`,
+          background: bgStories,
         }}
       >
         <Story />

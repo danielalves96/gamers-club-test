@@ -30,5 +30,5 @@ export const CardBodyLabel = styled.span`
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: white;
 `;

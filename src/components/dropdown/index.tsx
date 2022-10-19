@@ -1,4 +1,5 @@
 import { useBannedPlayers } from '@/contexts/BannedPlayersContext';
+import { opacityWhite7 } from '@/styles/colors';
 import { DropdownProps } from '@/utilts/types';
 import React, { useEffect } from 'react';
 import { IconEyeOff, IconUserPlus } from '../icons';
@@ -50,7 +51,7 @@ export function Dropdown({
           <DropdownArrow />
           <DropdownContainer>
             <DropdownAligner>
-              <IconUserPlus color="#ffffff4d" size={24} />
+              <IconUserPlus color={opacityWhite7} size={24} />
               <DropdownSpan
                 onClick={() => {
                   handleChangeAvatar();
@@ -60,7 +61,7 @@ export function Dropdown({
               </DropdownSpan>
             </DropdownAligner>
             <DropdownAligner>
-              <IconEyeOff color="#ffffff4d" size={24} />
+              <IconEyeOff color={opacityWhite7} size={24} />
               <DropdownSpan
                 onClick={() => {
                   handleHiddenBanPlayers();

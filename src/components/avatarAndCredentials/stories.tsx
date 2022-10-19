@@ -1,3 +1,4 @@
+import { bgStories } from '../../styles/colors';
 import { PlayerProps } from '@/utilts/types';
 import { Meta, Story } from '@storybook/react';
 import { AvatarAndCredentials } from '.';
@@ -11,7 +12,7 @@ export default {
       <div
         style={{
           margin: `1rem`,
-          background: `#303356`,
+          background: bgStories,
           width: `fit-content`,
           padding: `1rem`,
         }}

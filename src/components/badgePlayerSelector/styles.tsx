@@ -1,3 +1,4 @@
+import { uiDark5 } from '../../styles/colors';
 import styled from 'styled-components';
 
 export const PlayerSelector = styled.div`
@@ -9,7 +10,7 @@ export const PlayerSelector = styled.div`
   align-items: center;
   right: 2rem;
   bottom: 2rem;
-  background: #383b51;
+  background: ${uiDark5};
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0px 16px 32px rgb(0 0 0 / 24%), 0px 8px 16px rgb(0 0 0 / 24%);
   border-radius: 2px;

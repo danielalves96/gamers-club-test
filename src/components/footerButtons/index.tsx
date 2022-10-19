@@ -1,4 +1,4 @@
-import { white } from '@/styles/colors';
+import { uiDark5, white } from '@/styles/colors';
 import React, { useState } from 'react';
 import { Button } from '../button';
 import { IconCog, IconDownload } from '../icons';
@@ -27,7 +27,7 @@ export function FooterButtons({
       <FooterSpacerButtons>
         <Button
           icon={<IconCog size={24} />}
-          color="#383B51"
+          color={uiDark5}
           width="40px"
           textColor={white}
           onClick={handleOpen}
@@ -41,7 +41,7 @@ export function FooterButtons({
 
         <Button
           icon={<IconDownload size={24} />}
-          color="#383B51"
+          color={uiDark5}
           width="281px"
           textColor={white}
           text={anticheat.label}

@@ -1,10 +1,10 @@
-import { opacityWhite2 } from '../../styles/colors';
+import { opacityWhite2, uiDark3 } from '../../styles/colors';
 import styled from 'styled-components';
 
 export const FooterDefault = styled.div`
   display: flex;
   justify-content: space-between;
-  background: #212335;
+  background: ${uiDark3};
   border-radius: 0px 0px 2px 2px;
   outline: 1px solid ${opacityWhite2};
   padding: 16px;

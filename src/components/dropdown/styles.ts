@@ -1,3 +1,4 @@
+import { uiDark5 } from '../../styles/colors';
 import styled from 'styled-components';
 
 export const DropdownContainer = styled.div`
@@ -5,7 +6,7 @@ export const DropdownContainer = styled.div`
   margin-top: 3rem;
   width: 280px;
   height: 96px;
-  background: #383b51;
+  background: ${uiDark5};
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0px 16px 32px rgb(0 0 0 / 24%), 0px 8px 16px rgb(0 0 0 / 24%);
   border-radius: 2px;
@@ -21,7 +22,7 @@ export const DropdownArrow = styled.div`
   height: 14px;
   margin-top: 44px;
   margin-left: 13px;
-  background: #383b51;
+  background: ${uiDark5};
   border: 1px solid rgba (255, 255, 255, 0.08);
   box-shadow: 0px 16px 32px rgb (0 0 0 / 24%), 0px 8px 16px rgb (0 0 0 / 24%);
   position: absolute;
@@ -37,7 +38,7 @@ export const DropdownSpan = styled.a`
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
-  color: #ffffff;
+  color: white;
 `;
 
 export const DropdownAligner = styled.div`

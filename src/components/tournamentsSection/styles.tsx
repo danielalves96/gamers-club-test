@@ -1,4 +1,11 @@
-import { opacityWhite2, opacityWhite3, white } from '../../styles/colors';
+import {
+  blue4,
+  blue7,
+  opacityWhite2,
+  opacityWhite3,
+  uiDark4,
+  white,
+} from '../../styles/colors';
 import styled from 'styled-components';
 export const Section = styled.div`
   width: 100%;
@@ -11,7 +18,7 @@ export const TournamentsCard = styled.div`
   height: 156px;
   left: 16px;
   top: 56px;
-  background: #282a3e;
+  background: ${uiDark4};
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 2px;
   padding: 16px;
@@ -31,7 +38,7 @@ export const SectionHeaderTitle = styled.span`
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: white;
 `;
 
 export const BadgeTournament = styled.div<{ color: string }>`
@@ -63,7 +70,7 @@ export const TournamentTitle = styled.span`
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: white;
 
   @media (max-width: 1240px) {
     font-size: 18px;
@@ -96,7 +103,6 @@ export const TournamentTeamsData = styled.div`
 export const TournamentBar = styled.div`
   width: 100%;
   height: 8px;
-  /* left: calc(50% - 336px / 2); */
   top: 188px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 16px;
@@ -106,7 +112,7 @@ export const TournamentBar = styled.div`
 export const TournamentStatusBar = styled.div<{ width: string }>`
   width: ${(props) => props.width};
   height: 6px;
-  background: linear-gradient(90deg, #5968f8 0%, #49a3fd 100%);
+  background: linear-gradient(90deg, ${blue7} 0%, ${blue4} 100%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0px 2px 4px rgb(0 0 0 / 16%),
     inset 0px 1px 0px rgb(255 255 255 / 24%);

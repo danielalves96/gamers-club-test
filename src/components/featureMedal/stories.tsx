@@ -1,3 +1,4 @@
+import { bgStories } from '../../styles/colors';
 import { FeaturedMedalComponentProps } from '@/utilts/types';
 import { Meta, Story } from '@storybook/react';
 import { FeatureMedal } from '.';
@@ -13,7 +14,7 @@ export default {
           margin: `1rem`,
           width: `fit-content`,
           padding: `1rem`,
-          background: `#303356`,
+          background: bgStories,
         }}
       >
         <Story />

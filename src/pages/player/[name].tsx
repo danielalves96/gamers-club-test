@@ -4,7 +4,7 @@ import { Footer } from '@/components/footer';
 import API from '@/services/api';
 import { PlayerDataProps } from '@/utilts/types';
 import { GetServerSideProps } from 'next';
-import { MainBox } from './styles';
+import { MainBox } from '../../styles/player';
 import { useRouter } from 'next/router';
 import { BadgePLayerSelector } from '@/components/badgePlayerSelector';
 
