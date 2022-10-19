@@ -1,6 +1,6 @@
 import { lime4, red4 } from '@/styles/colors';
 import { TournamentProps } from '@/utilts/types';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { IconTrophy } from '../icons';
 import {
   BadgeTournament,
@@ -18,6 +18,17 @@ import {
 } from './styles';
 
 export function TournamentsSection(tournaments: TournamentProps) {
+  const [maxWidthBar, setMaxWidthBar] = useState(334);
+
+  useEffect(() => {
+    const width = document.getElementById(`box`) as HTMLElement;
+
+    if (width != null) {
+      const offsetWidth = width.offsetWidth;
+      setMaxWidthBar(offsetWidth);
+    }
+  }, []);
+
   const isOpenTournament =
     tournaments.nextTournament.status === `openRegistration` ? true : false;
 
@@ -28,8 +39,9 @@ export function TournamentsSection(tournaments: TournamentProps) {
   const partialPercentage = `${
     (tournaments.nextTournament.currentTeams /
       tournaments.nextTournament.maxTeams) *
-    334
+    maxWidthBar
   }px`;
+
   return (
     <Section>
       <SectionHeader>
@@ -50,7 +62,7 @@ export function TournamentsSection(tournaments: TournamentProps) {
             <TournamentMaxTeams>{`/${tournaments.nextTournament.maxTeams}`}</TournamentMaxTeams>
           </TournamentTeamsData>
         </TournamentCurrentTeams>
-        <TournamentBar>
+        <TournamentBar id="box">
           <TournamentStatusBar width={partialPercentage} />
         </TournamentBar>
       </TournamentsCard>

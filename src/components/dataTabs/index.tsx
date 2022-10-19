@@ -1,7 +1,7 @@
 import { blue5, red5, yellow2 } from '@/styles/colors';
 import { DataTabsProps } from '@/utilts/types';
 import React from 'react';
-import { IconArrowRight, IconDoor, IconUsers } from '../icons';
+import { IconArrowRight, IconDoor, IconMissions, IconUsers } from '../icons';
 import { MatchesSection } from '../matchesSection';
 import { TabsDefault } from './styles';
 import { TournamentsSection } from '../tournamentsSection';
@@ -24,7 +24,7 @@ export function DataTabs({ ranked, lobby, tournaments }: DataTabsProps) {
         matchData={ranked}
         buttonTextColor="white"
         buttonIcon={<IconUsers size={24} />}
-        icon={<IconDoor size={24} color={isProPlayer ? red5 : blue5} />}
+        icon={<IconMissions size={24} color={isProPlayer ? red5 : blue5} />}
       />
     </TabsDefault>
   );

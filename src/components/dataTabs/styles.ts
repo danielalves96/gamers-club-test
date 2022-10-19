@@ -6,4 +6,8 @@ export const TabsDefault = styled.div`
   background: #212335;
   box-shadow: inset 0px 4px 16px rgba(0, 0, 0, 0.16);
   flex-direction: row;
+
+  @media (max-width: 760px) {
+    flex-direction: column;
+  }
 `;

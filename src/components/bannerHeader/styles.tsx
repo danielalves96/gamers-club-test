@@ -42,4 +42,13 @@ export const Banner = styled.div<{ type: string }>`
   align-items: center;
   justify-content: space-between;
   outline: 1px solid ${opacityWhite2};
+
+  @media (max-width: 1260px) {
+    width: 100%;
+  }
+
+  @media (max-width: 860px) {
+    width: 100%;
+    background-size: cover !important;
+  }
 `;

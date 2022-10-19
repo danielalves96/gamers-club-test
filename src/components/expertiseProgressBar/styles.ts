@@ -74,4 +74,8 @@ export const MainExpertise = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 480px;
+
+  @media (max-width: 925px) {
+    display: none;
+  }
 `;

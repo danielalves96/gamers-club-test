@@ -7,7 +7,7 @@ export const Section = styled.div`
 `;
 
 export const TournamentsCard = styled.div`
-  width: 368px;
+  width: 100%;
   height: 156px;
   left: 16px;
   top: 56px;
@@ -64,6 +64,10 @@ export const TournamentTitle = styled.span`
   line-height: 24px;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (max-width: 1200px) {
+    font-size: 18px;
+  }
 `;
 
 export const TournamentCurrentTeams = styled.div`
@@ -90,9 +94,9 @@ export const TournamentTeamsData = styled.div`
 `;
 
 export const TournamentBar = styled.div`
-  width: 336px;
+  width: 100%;
   height: 8px;
-  left: calc(50% - 336px / 2);
+  /* left: calc(50% - 336px / 2); */
   top: 188px;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 16px;

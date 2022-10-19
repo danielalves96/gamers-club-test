@@ -15,6 +15,11 @@ body {
   color: ${color.white};
   margin: auto;
   width: 1200px;
+
+  @media (max-width: 1260px) {
+    width: 100%;
+    padding: 2rem;
+  }
 }
 
 a {
