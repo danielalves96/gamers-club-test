@@ -180,3 +180,7 @@ export type UsersDataProps = {
   label: string;
   color: string;
 };
+
+export type BadgePlayerSelectorProps = {
+  name: string | any;
+};

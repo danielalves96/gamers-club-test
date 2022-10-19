@@ -65,7 +65,7 @@ export const TournamentTitle = styled.span`
   text-transform: uppercase;
   color: #ffffff;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1240px) {
     font-size: 18px;
   }
 `;

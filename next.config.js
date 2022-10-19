@@ -11,4 +11,13 @@ module.exports = {
     // Enables the styled-components SWC transform
     styledComponents: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/player/lizzy',
+        permanent: true,
+      },
+    ]
+  },
 };
