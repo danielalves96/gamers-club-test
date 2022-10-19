@@ -13,7 +13,7 @@ export const CardBodyData = styled.div`
   );
 `;
 
-export const CardBodyNumber = styled.span<{ color: string }>`
+export const CardBodyNumber = styled.div<{ color: string }>`
   font-family: 'Teko';
   font-style: normal;
   font-weight: 400;

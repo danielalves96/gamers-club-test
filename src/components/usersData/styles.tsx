@@ -6,7 +6,7 @@ export const UsersDataContainer = styled.div`
   gap: 8px;
 `;
 
-export const DataValue = styled.span<{ color: string }>`
+export const DataValue = styled.div<{ color: string }>`
   font-family: 'Teko';
   font-style: normal;
   font-weight: 400;

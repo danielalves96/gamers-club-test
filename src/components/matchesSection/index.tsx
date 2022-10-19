@@ -35,7 +35,7 @@ export function MatchesSection({
       <SectionFooter>
         <Button
           color={color}
-          width={368}
+          width="368px"
           icon={buttonIcon}
           textColor={buttonTextColor}
           text={matchData.action.label}

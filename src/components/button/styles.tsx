@@ -2,14 +2,14 @@ import styled from 'styled-components';
 
 export const ButtonDefault = styled.button<{
   color: string;
-  width: number;
+  width: string;
   textColor: string;
 }>`
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  width: ${(props) => `${props.width}px`};
+  width: ${(props) => `${props.width}`};
   height: 40px;
   background: ${(props) => props.color};
   border: 1px solid rgba(255, 255, 255, 0.08);

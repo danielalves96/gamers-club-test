@@ -28,7 +28,7 @@ export function FooterButtons({
         <Button
           icon={<IconCog size={24} />}
           color="#383B51"
-          width={40}
+          width="40px"
           textColor={white}
           onClick={handleOpen}
         />
@@ -42,7 +42,7 @@ export function FooterButtons({
         <Button
           icon={<IconDownload size={24} />}
           color="#383B51"
-          width={281}
+          width="281px"
           textColor={white}
           text={anticheat.label}
           onClick={() => {

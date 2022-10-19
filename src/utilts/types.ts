@@ -115,7 +115,7 @@ export type ButtonProps = {
   color: string;
   textColor: string;
   icon?: JSX.Element;
-  width: number;
+  width: string;
   text?: string;
   onClick?: () => void;
 };

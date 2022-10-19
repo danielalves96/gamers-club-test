@@ -3,13 +3,15 @@ import { DataTabsProps } from '@/utilts/types';
 import React from 'react';
 import { IconArrowRight, IconDoor, IconUsers } from '../icons';
 import { MatchesSection } from '../matchesSection';
-import { Section, TabsDefault } from './styles';
+import { TabsDefault } from './styles';
+import { TournamentsSection } from '../tournamentsSection';
 
 export function DataTabs({ ranked, lobby, tournaments }: DataTabsProps) {
   const isProPlayer = ranked.type === `pro` ? true : false;
+
   return (
     <TabsDefault>
-      <Section>teste</Section>
+      <TournamentsSection {...tournaments} />
       <MatchesSection
         color={yellow2}
         matchData={lobby}

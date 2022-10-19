@@ -7,6 +7,7 @@ import {
   DefaultText,
   UsersDataContainer,
 } from './styles';
+import CountUp from 'react-countup';
 
 export function UsersData({ total, label, color }: UsersDataProps) {
   const splitedLabel = label.split(`**`).filter((element) => {
@@ -15,7 +16,9 @@ export function UsersData({ total, label, color }: UsersDataProps) {
 
   return (
     <UsersDataContainer>
-      <DataValue color={color}>{total}</DataValue>
+      <DataValue color={color}>
+        <CountUp start={0} end={total} duration={2.5} />
+      </DataValue>
       <DataTexts>
         <DefaultText>{splitedLabel[0]}</DefaultText>
         <ColorText color={color}>{splitedLabel[1]}</ColorText>

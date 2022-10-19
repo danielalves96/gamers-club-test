@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const SectionMatches = styled.div`
   width: 100%;
   outline: 1px solid ${opacityWhite2};
-  padding: 18px;
+  padding: 16px;
 `;
 export const SectionHeader = styled.div`
   display: flex;
