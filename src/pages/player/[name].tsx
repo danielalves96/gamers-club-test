@@ -11,7 +11,7 @@ export default function Home({ playerData }: PlayerDataProps) {
   return (
     <MainBox>
       <BannerHeader {...playerData} />
-      <DataTabs />
+      <DataTabs {...playerData} />
       <Footer {...playerData} />
     </MainBox>
   );

@@ -8,10 +8,10 @@ export const TabsDefault = styled.div`
   box-shadow: inset 0px 4px 16px rgba(0, 0, 0, 0.16);
   height: 236px;
   flex-direction: row;
+`;
 
-  div {
-    width: 100%;
-    outline: 1px solid ${opacityWhite2};
-    padding: 18px;
-  }
+export const Section = styled.div`
+  width: 100%;
+  outline: 1px solid ${opacityWhite2};
+  padding: 18px;
 `;

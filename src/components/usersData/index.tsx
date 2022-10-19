@@ -1,3 +1,4 @@
+import { UsersDataProps } from '@/utilts/types';
 import React from 'react';
 import {
   ColorText,
@@ -6,12 +7,6 @@ import {
   DefaultText,
   UsersDataContainer,
 } from './styles';
-
-export type UsersDataProps = {
-  total: number;
-  label: string;
-  color: string;
-};
 
 export function UsersData({ total, label, color }: UsersDataProps) {
   const splitedLabel = label.split(`**`).filter((element) => {

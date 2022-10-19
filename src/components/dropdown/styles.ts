@@ -39,3 +39,10 @@ export const DropdownSpan = styled.a`
   line-height: 22px;
   color: #ffffff;
 `;
+
+export const DropdownAligner = styled.div`
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  cursor: pointer;
+`;

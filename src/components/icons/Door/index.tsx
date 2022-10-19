@@ -1,7 +1,7 @@
 import { IconsProps } from '@/utilts/types';
 
 export const IconDoor = ({ size, color }: IconsProps) => (
-  <div>
+  <div style={{ display: `flex` }}>
     <svg
       width={`${size}px`}
       height={`${size}px`}

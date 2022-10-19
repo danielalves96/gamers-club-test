@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export type IconsProps = {
   size: number;
   color?: string;
@@ -126,6 +128,7 @@ export type FooterProps = {
 
 export type DropdownProps = {
   open: boolean;
+  setOpen: (boolean: boolean) => void;
   changeAvatarData: ConfigProps;
   hideBannedData: ConfigProps;
 };
@@ -139,4 +142,41 @@ export type FooterButtonsProps = {
   anticheat: AntiCheatProps;
   changeAvatarData: ConfigProps;
   hideBannedData: ConfigProps;
+};
+
+export type BannedPlayersContextType = {
+  isHiddenBanPlayersData: boolean;
+  setIsHiddenBanPlayersData: (isHiddenBanPlayersData: boolean) => void;
+  buttonText: string;
+  setButtonText: (isHiddenBanPlayersData: string) => void;
+};
+
+export type ReactNodeProps = {
+  children: ReactNode;
+};
+
+export type DataTabsProps = {
+  ranked: RankedProps;
+  lobby: LobbyProps;
+  tournaments: TournamentProps;
+};
+
+export type MatchesSectionProps = {
+  color: string;
+  matchData: LobbyProps;
+  icon: JSX.Element;
+  buttonTextColor: string;
+  buttonIcon: JSX.Element;
+};
+
+export type MatchesCardProps = {
+  color: string;
+  total: number;
+  label: string;
+};
+
+export type UsersDataProps = {
+  total: number;
+  label: string;
+  color: string;
 };

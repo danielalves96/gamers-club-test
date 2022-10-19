@@ -36,6 +36,7 @@ export function FooterButtons({
           changeAvatarData={changeAvatarData}
           hideBannedData={hideBannedData}
           open={open}
+          setOpen={setOpen}
         />
 
         <Button

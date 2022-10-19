@@ -1,41 +1,74 @@
+import { useBannedPlayers } from '@/contexts/BannedPlayersContext';
 import { DropdownProps } from '@/utilts/types';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { IconEyeOff, IconUserPlus } from '../icons';
-import { DropdownContainer, DropdownArrow, DropdownSpan } from './styles';
+import {
+  DropdownContainer,
+  DropdownArrow,
+  DropdownSpan,
+  DropdownAligner,
+} from './styles';
 
 export function Dropdown({
   open,
+  setOpen,
   changeAvatarData,
   hideBannedData,
 }: DropdownProps) {
+  const {
+    isHiddenBanPlayersData,
+    setIsHiddenBanPlayersData,
+    setButtonText,
+    buttonText,
+  } = useBannedPlayers();
+
+  useEffect(() => {
+    setButtonText(hideBannedData.label);
+  }, []);
+
+  function handleHiddenBanPlayers() {
+    setIsHiddenBanPlayersData(!isHiddenBanPlayersData);
+
+    if (isHiddenBanPlayersData === false) {
+      setButtonText(`Exibir Cheaters Banidos`);
+    } else {
+      setButtonText(hideBannedData.label);
+    }
+
+    setOpen(false);
+  }
+
+  function handleChangeAvatar() {
+    alert(`Esta função não está disponível no momento.`);
+    setOpen(false);
+  }
+
   return (
     <>
       {open ? (
         <>
           <DropdownArrow />
           <DropdownContainer>
-            <div
-              style={{
-                display: `flex`,
-                gap: 16,
-                alignItems: `center`,
-                cursor: `pointer`,
-              }}
-            >
+            <DropdownAligner>
               <IconUserPlus color="#ffffff4d" size={24} />
-              <DropdownSpan>{changeAvatarData.label}</DropdownSpan>
-            </div>
-            <div
-              style={{
-                display: `flex`,
-                gap: 16,
-                alignItems: `center`,
-                cursor: `pointer`,
-              }}
-            >
+              <DropdownSpan
+                onClick={() => {
+                  handleChangeAvatar();
+                }}
+              >
+                {changeAvatarData.label}
+              </DropdownSpan>
+            </DropdownAligner>
+            <DropdownAligner>
               <IconEyeOff color="#ffffff4d" size={24} />
-              <DropdownSpan>{hideBannedData.label}</DropdownSpan>
-            </div>
+              <DropdownSpan
+                onClick={() => {
+                  handleHiddenBanPlayers();
+                }}
+              >
+                {buttonText}
+              </DropdownSpan>
+            </DropdownAligner>
           </DropdownContainer>
         </>
       ) : null}
