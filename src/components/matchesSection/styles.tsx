@@ -1,5 +1,5 @@
-import { opacityWhite2 } from '../../styles/colors';
 import styled from 'styled-components';
+import { opacityWhite2 } from '../../styles/colors';
 
 export const SectionMatches = styled.div`
   width: 100%;

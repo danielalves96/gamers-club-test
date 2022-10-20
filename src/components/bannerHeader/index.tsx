@@ -1,5 +1,4 @@
 import { BannerHeaderProps } from '@/utilts/types';
-import React from 'react';
 import { AvatarAndCredentials } from '../avatarAndCredentials';
 import { ExpertiseProgressBar } from '../expertiseProgressBar';
 import { FeatureMedal } from '../featureMedal';

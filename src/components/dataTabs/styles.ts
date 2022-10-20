@@ -1,5 +1,5 @@
-import { uiDark3 } from '../../styles/colors';
 import styled from 'styled-components';
+import { uiDark3 } from '../../styles/colors';
 
 export const TabsDefault = styled.div`
   display: flex;

@@ -1,5 +1,5 @@
-import { uiDark5 } from '../../styles/colors';
 import styled from 'styled-components';
+import { uiDark5 } from '../../styles/colors';
 
 export const DropdownContainer = styled.div`
   position: absolute;

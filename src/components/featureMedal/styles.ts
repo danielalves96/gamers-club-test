@@ -1,5 +1,5 @@
-import { blue4, red2, red5, uiDark2 } from '../../styles/colors';
 import styled from 'styled-components';
+import { blue4, red2, red5, uiDark2 } from '../../styles/colors';
 
 export const FeatureMedalImage = styled.div`
   margin-top: 8px;

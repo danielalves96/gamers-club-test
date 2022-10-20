@@ -1,13 +1,13 @@
+import { BadgePLayerSelector } from '@/components/badgePlayerSelector';
 import BannerHeader from '@/components/bannerHeader';
 import { DataTabs } from '@/components/dataTabs';
 import { Footer } from '@/components/footer';
 import API from '@/services/api';
 import { PlayerDataProps } from '@/utilts/types';
 import { GetServerSideProps } from 'next';
-import { MainBox } from '../../styles/player';
-import { useRouter } from 'next/router';
-import { BadgePLayerSelector } from '@/components/badgePlayerSelector';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { MainBox } from '../../styles/player';
 
 export default function Home({ playerData }: PlayerDataProps) {
   const router = useRouter();

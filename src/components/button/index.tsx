@@ -1,5 +1,4 @@
 import { ButtonProps } from '@/utilts/types';
-import React from 'react';
 import { ButtonDefault, ButtonTextAlign } from './styles';
 
 export function Button({

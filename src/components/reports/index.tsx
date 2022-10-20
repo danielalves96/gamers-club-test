@@ -1,7 +1,6 @@
+import { ReportsDataProps } from '@/utilts/types';
 import { useBannedPlayers } from '../../contexts/BannedPlayersContext';
 import { blue5, red4 } from '../../styles/colors';
-import { ReportsDataProps } from '@/utilts/types';
-import React from 'react';
 import { UsersData } from '../usersData';
 import { ReportsDataSpacer } from './styles';
 

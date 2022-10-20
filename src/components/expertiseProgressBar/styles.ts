@@ -1,5 +1,5 @@
-import { blue3, blue4, red3, red4, uiDark2, white } from '../../styles/colors';
 import styled from 'styled-components';
+import { blue3, blue4, red3, red4, uiDark2, white } from '../../styles/colors';
 
 export const ExpertiseBar = styled.div`
   width: 480px;

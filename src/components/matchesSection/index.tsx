@@ -1,13 +1,13 @@
-import { lime4, red3 } from '../../styles/colors';
 import { MatchesSectionProps } from '@/utilts/types';
+import { lime4, red3 } from '../../styles/colors';
 import { Button } from '../button';
 import { MatchesCard } from '../matchesCard';
 import {
-  SectionMatches,
   SectionBody,
   SectionFooter,
   SectionHeader,
   SectionHeaderTitle,
+  SectionMatches,
 } from './styles';
 
 export function MatchesSection({

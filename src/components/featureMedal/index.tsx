@@ -1,5 +1,4 @@
 import { FeaturedMedalComponentProps } from '@/utilts/types';
-import React from 'react';
 import {
   FeatureMedalBox,
   FeatureMedalImage,

@@ -1,6 +1,6 @@
-import { lime4, red4 } from '../../styles/colors';
 import { TournamentProps } from '@/utilts/types';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { lime4, red4 } from '../../styles/colors';
 import { IconTrophy } from '../icons';
 import {
   BadgeTournament,

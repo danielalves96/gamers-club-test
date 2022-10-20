@@ -1,7 +1,7 @@
-import { mockPlayerDataResponse } from '../../utilts/mocks';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { Footer } from '.';
+import { mockPlayerDataResponse } from '../../utilts/mocks';
 
 describe(`<Footer />`, () => {
   it(`should render successfully component with props`, () => {

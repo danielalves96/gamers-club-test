@@ -1,7 +1,7 @@
-import { mockPlayerDataResponse } from '../../utilts/mocks';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { MatchesSection } from '.';
+import { mockPlayerDataResponse } from '../../utilts/mocks';
 import { IconDoor } from '../icons';
 
 const matchesSectionData = {

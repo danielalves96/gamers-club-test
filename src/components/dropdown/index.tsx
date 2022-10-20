@@ -1,13 +1,13 @@
+import { DropdownProps } from '@/utilts/types';
+import { useEffect } from 'react';
 import { useBannedPlayers } from '../../contexts/BannedPlayersContext';
 import { opacityWhite7 } from '../../styles/colors';
-import { DropdownProps } from '@/utilts/types';
-import React, { useEffect } from 'react';
 import { IconEyeOff, IconUserPlus } from '../icons';
 import {
-  DropdownContainer,
-  DropdownArrow,
-  DropdownSpan,
   DropdownAligner,
+  DropdownArrow,
+  DropdownContainer,
+  DropdownSpan,
 } from './styles';
 
 export function Dropdown({

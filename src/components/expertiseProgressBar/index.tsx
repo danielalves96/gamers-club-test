@@ -1,8 +1,8 @@
-import { blue4, red4 } from '../../styles/colors';
 import {
   ExpertiseProgressBarProps,
   ExpertiseProgressProps,
 } from '@/utilts/types';
+import { blue4, red4 } from '../../styles/colors';
 import { IconPin } from '../icons';
 import {
   ExpertiseBar,

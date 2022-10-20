@@ -1,5 +1,5 @@
-import { opacityWhite2, uiDark3 } from '../../styles/colors';
 import styled from 'styled-components';
+import { opacityWhite2, uiDark3 } from '../../styles/colors';
 
 export const FooterDefault = styled.div`
   display: flex;

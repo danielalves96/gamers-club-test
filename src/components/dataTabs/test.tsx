@@ -1,7 +1,7 @@
-import { mockPlayerDataResponse } from '../../utilts/mocks';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { DataTabs } from '.';
+import { mockPlayerDataResponse } from '../../utilts/mocks';
 
 describe(`<DataTabs />`, () => {
   it(`should render successfully component with props`, () => {

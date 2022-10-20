@@ -1,5 +1,5 @@
 import { UsersDataProps } from '@/utilts/types';
-import React from 'react';
+import CountUp from 'react-countup';
 import {
   ColorText,
   DataTexts,
@@ -7,7 +7,6 @@ import {
   DefaultText,
   UsersDataContainer,
 } from './styles';
-import CountUp from 'react-countup';
 
 export function UsersData({ total, label, color }: UsersDataProps) {
   const splitedLabel = label.split(`**`).filter((element) => {

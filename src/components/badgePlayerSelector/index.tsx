@@ -1,7 +1,7 @@
 import { BadgePlayerSelectorProps } from '@/utilts/types';
 import Link from 'next/link';
-import { PlayerSelector, SelectedPlayer } from './styles';
 import { lime4 } from '../../styles/colors';
+import { PlayerSelector, SelectedPlayer } from './styles';
 
 export function BadgePLayerSelector({ name }: BadgePlayerSelectorProps) {
   return (

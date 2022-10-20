@@ -1,7 +1,7 @@
-import { mockPlayerDataResponse } from '../../utilts/mocks';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { TournamentsSection } from '.';
+import { mockPlayerDataResponse } from '../../utilts/mocks';
 
 const tournamentData = { ...mockPlayerDataResponse.tournaments };
 

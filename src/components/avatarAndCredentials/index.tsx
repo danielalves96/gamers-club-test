@@ -1,5 +1,4 @@
 import { PlayerProps } from '@/utilts/types';
-import React from 'react';
 import {
   Avatar,
   Nickname,
