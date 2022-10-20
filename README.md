@@ -10,6 +10,12 @@
 <br />
 
 <div align="center">
+  <strong>Aplicação em produção: <a href="gamers-club-test.vercel.app" target="_blank">gamers-club-test.com.br</a></strong>
+</div>
+
+<br />
+
+<div align="center">
   <sub>Desenvolvido por <a href="https://www.linkedin.com/in/daniel-luiz-alves-791a7911a/">Daniel Luiz Alves</a>.</sub>
 </div>
 
@@ -28,6 +34,8 @@
 - 🚫 lint-staged — Executa o ESLint e Prettier em arquivos Git preparados
 - 👷 PR Workflow — Executa verificação de tipo e linters em solicitações pull
 - ⚙️ EditorConfig — Estilos de codificação consistentes entre editores e IDEs
+
+<br />
 
 ## Executando o projeto
 
@@ -65,7 +73,7 @@ Para executar os testes basta executar o comando:
 yarn test
 ```
 
-##Documentação
+## Documentação
 
 ### Requisitos
 
@@ -74,10 +82,10 @@ yarn
 
 ### Estrutura de pastas
 
-- [`.github`](.github) — GitHub configuration including the CI workflow.<br>
-- [`.husky`](.husky) — Husky configuration and hooks.<br>
-- [`public`](./public) — Static assets such as robots.txt, images, and favicon.<br>
-- [`src`](./src) — Application source code, including pages, components, styles.
+- [`.github`](.github) — Configuração do GitHub, incluindo o CI Workflow.<br>
+- [`.husky`](.husky) — Configuração do Husky e hooks.<br>
+- [`public`](./public) — Arquivos estáticos, como robots.txt, imagns, e favicon.<br>
+- [`src`](./src) — Código fonte da aplicação, incluindo páginas, componentes, estilos.
 
 ### Scripts
 
