@@ -75,6 +75,10 @@ export const TournamentTitle = styled.span`
   @media (max-width: 1240px) {
     font-size: 18px;
   }
+
+  @media (max-width: 370px) {
+    font-size: 16px;
+  }
 `;
 
 export const TournamentCurrentTeams = styled.div`
