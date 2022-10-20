@@ -1,5 +1,6 @@
 import { DropdownProps } from '@/utilts/types';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useBannedPlayers } from '../../contexts/BannedPlayersContext';
 import { opacityWhite7 } from '../../styles/colors';
 import { IconEyeOff, IconUserPlus } from '../icons';
@@ -16,6 +17,8 @@ export function Dropdown({
   changeAvatarData,
   hideBannedData,
 }: DropdownProps) {
+  const { t } = useTranslation();
+
   const {
     isHiddenBanPlayersData,
     setIsHiddenBanPlayersData,
@@ -31,7 +34,7 @@ export function Dropdown({
     setIsHiddenBanPlayersData(!isHiddenBanPlayersData);
 
     if (isHiddenBanPlayersData === false) {
-      setButtonText(`Exibir Cheaters Banidos`);
+      setButtonText(t(`SHOW_BANNED_CHEATERS`));
     } else {
       setButtonText(hideBannedData.label);
     }
@@ -40,7 +43,7 @@ export function Dropdown({
   }
 
   function handleChangeAvatar() {
-    alert(`Esta função não está disponível no momento.`);
+    alert(t(`FUNCTION_NOT_AVAILABLE`));
     setOpen(false);
   }
 

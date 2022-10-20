@@ -1,4 +1,5 @@
 import { MatchesSectionProps } from '@/utilts/types';
+import { useTranslation } from 'react-i18next';
 import { lime4, red3 } from '../../styles/colors';
 import { Button } from '../button';
 import { MatchesCard } from '../matchesCard';
@@ -17,6 +18,8 @@ export function MatchesSection({
   buttonTextColor,
   buttonIcon,
 }: MatchesSectionProps) {
+  const { t } = useTranslation();
+
   function handleButtonClick(url: string) {
     const newWindow = window.open(url, `_blank`, `noopener,noreferrer`);
     if (newWindow) newWindow.opener = null;
@@ -28,9 +31,21 @@ export function MatchesSection({
         <SectionHeaderTitle>{matchData.label}</SectionHeaderTitle>
       </SectionHeader>
       <SectionBody>
-        <MatchesCard color={color} total={matchData.matches} label="Partidas" />
-        <MatchesCard color={lime4} total={matchData.wins} label="Vitórias" />
-        <MatchesCard color={red3} total={matchData.losses} label="Derrotas" />
+        <MatchesCard
+          color={color}
+          total={matchData.matches}
+          label={t(`MATCHES`)}
+        />
+        <MatchesCard
+          color={lime4}
+          total={matchData.wins}
+          label={t(`VICTORIES`)}
+        />
+        <MatchesCard
+          color={red3}
+          total={matchData.losses}
+          label={t(`DEFEATS`)}
+        />
       </SectionBody>
       <SectionFooter>
         <Button

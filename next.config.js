@@ -18,6 +18,10 @@ module.exports = {
         destination: '/player/lizzy',
         permanent: true,
       },
-    ]
+    ];
+  },
+  i18n: {
+    locales: ['pt-BR'],
+    defaultLocale: 'pt-BR',
   },
 };

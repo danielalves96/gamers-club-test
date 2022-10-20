@@ -1,5 +1,6 @@
 import { TournamentProps } from '@/utilts/types';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { lime4, red4 } from '../../styles/colors';
 import { IconTrophy } from '../icons';
 import {
@@ -18,6 +19,7 @@ import {
 } from './styles';
 
 export function TournamentsSection(tournaments: TournamentProps) {
+  const { t } = useTranslation();
   const [maxWidthBar, setMaxWidthBar] = useState(334);
 
   useEffect(() => {
@@ -33,8 +35,8 @@ export function TournamentsSection(tournaments: TournamentProps) {
     tournaments.nextTournament.status === `openRegistration` ? true : false;
 
   const registrationLabel = isOpenTournament
-    ? `Incrições Abertas`
-    : `Incrições encerradas`;
+    ? t(`OPEN_REGISTRATIONS`)
+    : t(`CLOSED_REGISTRATIONS`);
 
   const partialPercentage = `${
     (tournaments.nextTournament.currentTeams /
@@ -54,7 +56,7 @@ export function TournamentsSection(tournaments: TournamentProps) {
         </BadgeTournament>
         <TournamentTitle>{tournaments.nextTournament.name}</TournamentTitle>
         <TournamentCurrentTeams>
-          Times inscritos
+          {t(`REGISTERED_TEAMS`)}
           <TournamentTeamsData>
             <TournamentTeams>
               {tournaments.nextTournament.currentTeams}
