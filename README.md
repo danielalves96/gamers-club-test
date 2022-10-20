@@ -10,7 +10,7 @@
 <br />
 
 <div align="center">
-  <strong>Aplicação em produção: <a href="gamers-club-test.vercel.app" target="_blank">gamers-club-test.com.br</a></strong>
+  <strong>Aplicação em produção: <a href="https://gamers-club-test.vercel.app" target="_blank">gamers-club-test.com.br</a></strong>
 </div>
 
 <br />
