@@ -1,5 +1,5 @@
-import { useBannedPlayers } from '@/contexts/BannedPlayersContext';
-import { opacityWhite7 } from '@/styles/colors';
+import { useBannedPlayers } from '../../contexts/BannedPlayersContext';
+import { opacityWhite7 } from '../../styles/colors';
 import { DropdownProps } from '@/utilts/types';
 import React, { useEffect } from 'react';
 import { IconEyeOff, IconUserPlus } from '../icons';
@@ -49,7 +49,7 @@ export function Dropdown({
       {open ? (
         <>
           <DropdownArrow />
-          <DropdownContainer>
+          <DropdownContainer data-testid="dropdown">
             <DropdownAligner>
               <IconUserPlus color={opacityWhite7} size={24} />
               <DropdownSpan

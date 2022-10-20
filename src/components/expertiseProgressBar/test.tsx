@@ -5,11 +5,11 @@ import {
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { ExpertiseProgressBar } from '.';
-import { mockExpertiseProgressBar } from './mock';
+import { mockPlayerDataResponse } from '../../utilts/mocks';
 
 describe(`<ExpertiseProgressBar />`, () => {
   it(`should render successfully with values`, () => {
-    render(<ExpertiseProgressBar {...mockExpertiseProgressBar} />);
+    render(<ExpertiseProgressBar {...mockPlayerDataResponse} />);
 
     function validateTexts(value: ExpertiseProgressBarProps) {
       value.expertiseProgress.map((value: ExpertiseProgressProps) =>
@@ -17,6 +17,6 @@ describe(`<ExpertiseProgressBar />`, () => {
       );
     }
 
-    validateTexts(mockExpertiseProgressBar);
+    validateTexts(mockPlayerDataResponse);
   });
 });

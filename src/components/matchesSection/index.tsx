@@ -1,4 +1,4 @@
-import { lime4, red3 } from '@/styles/colors';
+import { lime4, red3 } from '../../styles/colors';
 import { MatchesSectionProps } from '@/utilts/types';
 import { Button } from '../button';
 import { MatchesCard } from '../matchesCard';
@@ -22,7 +22,7 @@ export function MatchesSection({
     if (newWindow) newWindow.opener = null;
   }
   return (
-    <SectionMatches>
+    <SectionMatches data-testid="matches-section">
       <SectionHeader>
         {icon}
         <SectionHeaderTitle>{matchData.label}</SectionHeaderTitle>

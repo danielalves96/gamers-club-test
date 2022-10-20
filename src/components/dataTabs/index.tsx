@@ -1,4 +1,4 @@
-import { black0, blue5, red5, yellow2 } from '@/styles/colors';
+import { black0, blue5, red5, yellow2 } from '../../styles/colors';
 import { DataTabsProps } from '@/utilts/types';
 import React from 'react';
 import { IconArrowRight, IconDoor, IconMissions, IconUsers } from '../icons';
@@ -10,7 +10,7 @@ export function DataTabs({ ranked, lobby, tournaments }: DataTabsProps) {
   const isProPlayer = ranked.type === `pro` ? true : false;
 
   return (
-    <TabsDefault>
+    <TabsDefault data-testid="data-tabs">
       <TournamentsSection {...tournaments} />
       <MatchesSection
         color={yellow2}

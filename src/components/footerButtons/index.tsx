@@ -1,8 +1,8 @@
-import { uiDark5, white } from '@/styles/colors';
+import { uiDark5, white } from '../../styles/colors';
 import React, { useState } from 'react';
 import { Button } from '../button';
 import { IconCog, IconDownload } from '../icons';
-import { Dropdown } from '@/components/dropdown';
+import { Dropdown } from '../../components/dropdown';
 import { FooterSpacerButtons } from './styles';
 import { FooterButtonsProps } from '@/utilts/types';
 
@@ -24,7 +24,7 @@ export function FooterButtons({
 
   return (
     <>
-      <FooterSpacerButtons>
+      <FooterSpacerButtons data-testid="footer-buttons">
         <Button
           icon={<IconCog size={24} />}
           color={uiDark5}

@@ -1,8 +1,8 @@
 import { FooterProps } from '@/utilts/types';
 import React from 'react';
 import { FooterDefault } from './styles';
-import { Reports } from '@/components/reports';
-import { FooterButtons } from '@/components/footerButtons';
+import { Reports } from '../../components/reports';
+import { FooterButtons } from '../../components/footerButtons';
 
 export function Footer({ config, anticheat, reports }: FooterProps) {
   const [onlinePlayers] = reports.filter((item) => item.type === `online`);
@@ -17,7 +17,7 @@ export function Footer({ config, anticheat, reports }: FooterProps) {
   );
 
   return (
-    <FooterDefault>
+    <FooterDefault data-testid="footer">
       <FooterButtons
         anticheat={anticheat}
         changeAvatarData={changeAvatarData}

@@ -1,5 +1,5 @@
-import { useBannedPlayers } from '@/contexts/BannedPlayersContext';
-import { blue5, red4 } from '@/styles/colors';
+import { useBannedPlayers } from '../../contexts/BannedPlayersContext';
+import { blue5, red4 } from '../../styles/colors';
 import { ReportsDataProps } from '@/utilts/types';
 import React from 'react';
 import { UsersData } from '../usersData';
@@ -9,7 +9,7 @@ export function Reports({ onlinePlayers, bannedPlayers }: ReportsDataProps) {
   const { isHiddenBanPlayersData } = useBannedPlayers();
   return (
     <div>
-      <ReportsDataSpacer>
+      <ReportsDataSpacer data-testid="reports">
         <UsersData
           total={onlinePlayers.total}
           label={onlinePlayers.label}

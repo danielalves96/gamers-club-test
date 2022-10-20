@@ -5,7 +5,7 @@ import CountUp from 'react-countup';
 
 export function MatchesCard({ color, total, label }: MatchesCardProps) {
   return (
-    <CardBodyData>
+    <CardBodyData data-testid="mathes-card">
       <CardBodyNumber color={color}>
         <CountUp start={0} end={total} duration={1.75} />
       </CardBodyNumber>

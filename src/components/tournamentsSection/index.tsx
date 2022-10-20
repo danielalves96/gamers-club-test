@@ -1,4 +1,4 @@
-import { lime4, red4 } from '@/styles/colors';
+import { lime4, red4 } from '../../styles/colors';
 import { TournamentProps } from '@/utilts/types';
 import React, { useEffect, useState } from 'react';
 import { IconTrophy } from '../icons';
@@ -43,7 +43,7 @@ export function TournamentsSection(tournaments: TournamentProps) {
   }px`;
 
   return (
-    <Section>
+    <Section data-testid="tounaments-section">
       <SectionHeader>
         <IconTrophy size={25} color={lime4} />
         <SectionHeaderTitle>{tournaments.label}</SectionHeaderTitle>

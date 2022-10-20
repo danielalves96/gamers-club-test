@@ -6,9 +6,9 @@
   "author": "Daniel Luiz Alves <daniel.madeireira@gmail.com> (@capivara.dev)",
   "license": "MIT",
   "keywords": [
-    "nextjs",
-    "starter",
-    "typescript"
+    "gamersclub",
+    "gamer",
+    "platform"
   ],
   "scripts": {
     "dev": "next",
@@ -18,9 +18,7 @@
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
-    "postinstall": "husky install",
-    "storybook": "start-storybook -p 6006 -s ./public",
-    "build-storybook": "build-storybook -s public"
+    "postinstall": "husky install"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
@@ -41,14 +39,6 @@
     "@babel/core": "^7.19.3",
     "@commitlint/cli": "17.1.2",
     "@commitlint/config-conventional": "17.1.0",
-    "@storybook/addon-actions": "^6.5.12",
-    "@storybook/addon-essentials": "^6.5.12",
-    "@storybook/addon-interactions": "^6.5.12",
-    "@storybook/addon-links": "^6.5.12",
-    "@storybook/builder-webpack5": "^6.5.12",
-    "@storybook/manager-webpack5": "^6.5.12",
-    "@storybook/react": "^6.5.12",
-    "@storybook/testing-library": "^0.0.13",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@types/node": "16.11.64",

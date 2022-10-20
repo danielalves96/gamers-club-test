@@ -13,6 +13,7 @@ export function Button({
   return (
     <>
       <ButtonDefault
+        data-testid="button-default"
         color={color}
         width={width}
         textColor={textColor}

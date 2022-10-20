@@ -1,20 +1,20 @@
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { FeatureMedal } from '.';
-import { mockFeatureMedal } from './mock';
+import { mockPlayerDataResponse } from '../../utilts/mocks';
 
 describe(`<FeatureMedal />`, () => {
   it(`should render successfully component with props`, () => {
-    render(<FeatureMedal {...mockFeatureMedal} />);
+    render(<FeatureMedal {...mockPlayerDataResponse} />);
     const image = screen.getByRole(`img`);
 
     expect(image).toHaveAttribute(
       `src`,
-      `${mockFeatureMedal.featuredMedal.image}`,
+      `${mockPlayerDataResponse.featuredMedal.image}`,
     );
     expect(image).toHaveAttribute(
       `alt`,
-      `${mockFeatureMedal.featuredMedal.name}`,
+      `${mockPlayerDataResponse.featuredMedal.name}`,
     );
   });
 });

@@ -15,7 +15,7 @@ export function UsersData({ total, label, color }: UsersDataProps) {
   });
 
   return (
-    <UsersDataContainer>
+    <UsersDataContainer data-testid="users-data">
       <DataValue color={color}>
         <CountUp start={0} end={total} duration={2.5} />
       </DataValue>
