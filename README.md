@@ -77,8 +77,8 @@ yarn test
 
 ### Requisitos
 
-Node.js >= 12.22.0
-yarn
+- Node.js >= 12.22.0
+- yarn
 
 ### Estrutura de pastas
 
